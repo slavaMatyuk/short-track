@@ -1,0 +1,27 @@
+{
+  "name": "short-track",
+  "version": "1.0.0",
+  "description": "Easy or short exercises for the Innowise Internship",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slavaMatyuk/short-track.git"
+  },
+  "keywords": [],
+  "author": "slavaMatyuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slavaMatyuk/short-track/issues"
+  },
+  "homepage": "https://github.com/slavaMatyuk/short-track#readme",
+  "devDependencies": {
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.3",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
