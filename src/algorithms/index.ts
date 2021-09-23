@@ -25,4 +25,4 @@ const reduce = (arr: [number], callback: (arg0: number, arg1: number) => number,
   return initialValue;
 };
 
-const compose = (...fns: Array<any>) => (a: any) => fns.reverse().reduce((acc, fn) => fn(acc), a);
+const compose = (...fns: Array<any>) => (a: unknown) => fns.reverse().reduce((acc, fn) => fn(acc), a);
