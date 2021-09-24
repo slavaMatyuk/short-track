@@ -11,6 +11,15 @@ const sequenceSum = (begin: number, end: number, step: number): number => {
   return sum;
 };
 
-const stringify = (list: NodeList): string => {
-  
+interface List {
+  data: number;
+  next: List;
+}
+
+const stringify = (list: List): string => {
+  let res = list.data.toString();
+  if (!list.next) {
+    return list.data + ' -> ' + list.next;
+  }
+  return res += ' -> ' + stringify(list.next);
 };
