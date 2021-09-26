@@ -1,10 +1,10 @@
-const toMachineName = (name: string, separator: string): string => {
+export const toMachineName = (name: string, separator: string): string => {
   const arr = name.replace(/\s{2,}/g, ' ').split(' ');
   const res = arr.join(separator).toLowerCase().replace(/[\s;:.,%]/g, '');
   return res.replace(/^[\d]*./, '');
 };
 
-const alphabetized = (text: string): string => {
+export const alphabetized = (text: string): string => {
   return text.replace(/[^\w]|_/g, '').split('').sort((a, b) => {
     let res = 0;
     a = a.toLowerCase();
@@ -17,7 +17,7 @@ const alphabetized = (text: string): string => {
   }).join('');
 };
 
-const romanToNumber = (number: string): number => {
+export const romanToNumber = (number: string): number => {
   interface Roman {
     [key: string]: number
   };
@@ -31,7 +31,7 @@ const romanToNumber = (number: string): number => {
   return decimal;
 };
 
-const countDuplicates = (text: string): number => {
+export const countDuplicates = (text: string): number => {
   interface Obj {
     [key: string]: number
   };

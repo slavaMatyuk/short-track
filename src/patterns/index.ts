@@ -9,10 +9,12 @@ class Singleton {
   }
 };
 
-interface String {
+interface StringCustom extends String {
   customUpperCase(): string;
 }
 
-String.prototype.customUpperCase = function() {
+(String.prototype as StringCustom).customUpperCase = function() {
   return this.toUpperCase();
 };
+
+export default Singleton;

@@ -1,4 +1,4 @@
-const sequenceSum = (begin: number, end: number, step: number): number => {
+export const sequenceSum = (begin: number, end: number, step: number): number => {
   let sum = 0;
   if (begin > end) {
     return sum;
@@ -16,7 +16,7 @@ interface List {
   next: List;
 }
 
-const stringify = (list: List): string => {
+export const stringify = (list: List): string => {
   let res = list.data.toString();
   if (!list.next) {
     return list.data + ' -> ' + list.next;
