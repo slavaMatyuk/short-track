@@ -12,10 +12,12 @@ export class Node implements List {
   }
 }
 
-export const stringify = (list: List): string => {
-  let res = list.data.toString();
-  if (!list.next) {
-    return list.data + ' -> ' + list.next;
+export const stringify = (list: List): string | number => {
+  if (list instanceof Node === false) {
+    return list.data;
   }
-  return res += ' -> ' + stringify(list.next);
+  if (!list.next) {
+    return `${list.data} -> ${list.next}`;
+  }
+  return `${list.data} -> ${stringify(list.next)}`;
 };

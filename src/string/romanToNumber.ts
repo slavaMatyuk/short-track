@@ -1,15 +1,12 @@
+interface Roman {
+  [key: string]: number
+};
+
 const romanToNumber = (number: string): number => {
-  interface Roman {
-    [key: string]: number
-  };
   const roman: Roman = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
-  let decimal = 0;
-  for (let i = 0; i < number.length; i++) {
-    const current = roman[number[i]];
-    const next = roman[number[i + 1]];
-    (current < next) ? (decimal -= current) : (decimal += current);
-  }
-  return decimal;
+  if (!/^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(number)) return NaN;
+  return Array.from(number, elem => roman[elem])
+    .reduceRight((acc,cur) => acc + (cur * 4 < acc ? -cur : cur));
 };
 
 export default romanToNumber;

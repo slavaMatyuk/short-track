@@ -1,8 +1,7 @@
-const reduce = (arr: number[], callback: (arg0: number, arg1: number) => number, initialValue: number): number => {
-  arr.forEach(el => {
-    initialValue = initialValue !== undefined ? callback(initialValue, el) : el;
-  });
-  return initialValue;
+const reduce = (arr: number[], callback: (...args: number[]) => number, initialValue: number): number => {
+  let value = initialValue;
+  arr.map(el => value = callback(value, el));
+  return value;
 };
 
 export default reduce;

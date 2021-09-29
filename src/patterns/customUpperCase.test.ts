@@ -1,6 +1,4 @@
-String.prototype.customUpperCase = function(this: string): string {
-  return this.toUpperCase();
-};
+import './customUpperCase';
 
 describe('customUpperCase:', () => {
 
