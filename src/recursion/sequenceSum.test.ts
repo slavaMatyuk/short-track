@@ -1,4 +1,4 @@
-import sequenceSum from "./sequenceSum";
+import sequenceSum from './sequenceSum';
 
 describe('sequenceSum:', () => {
 

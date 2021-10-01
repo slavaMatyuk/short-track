@@ -1,4 +1,4 @@
-import multiplyAll from "./multiplyAll";
+import multiplyAll from './multiplyAll';
 
 describe('multiplyAll:', () => {
   const arr = [1, 2, 3];

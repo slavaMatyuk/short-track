@@ -1,4 +1,4 @@
-import biggest from "./biggest";
+import biggest from './biggest';
 
 describe('biggest:', () => {
 

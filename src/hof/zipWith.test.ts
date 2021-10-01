@@ -1,4 +1,4 @@
-import zipWith from "./zipWith";
+import zipWith from './zipWith';
 
 describe('zipWith:', () => {
 

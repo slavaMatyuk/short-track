@@ -1,4 +1,4 @@
-import flattenAndSort from "./flattenAndSort";
+import flattenAndSort from './flattenAndSort';
 
 describe('flattenAndSort:', () => {
 

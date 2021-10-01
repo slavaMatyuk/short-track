@@ -1,4 +1,4 @@
-import sumAverage from "./sumAverage";
+import sumAverage from './sumAverage';
 
 describe('sumAverage:', () => {
 

@@ -10,7 +10,7 @@ describe('sortListOfObject:', () => {
   ];
 
   test('should sort array by key "a" in descending order', () => {
-    let sortBy = 'a';
+    const sortBy = 'a';
     const result = [
       { a: 4, b: 12 },
       { a: 3, b: 2 },
@@ -23,7 +23,7 @@ describe('sortListOfObject:', () => {
 
   test('should sort array by key "b" in descending order', () => {
 
-    let sortBy = 'b';
+    const sortBy = 'b';
     const result = [
       { a: 2, b: 40 },
       { a: 4, b: 12 },

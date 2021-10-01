@@ -1,4 +1,4 @@
-import alphabetized from "./alphabetized";
+import alphabetized from './alphabetized';
 
 describe('alphabetized:', () => {
 

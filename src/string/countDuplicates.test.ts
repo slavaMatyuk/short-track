@@ -1,4 +1,4 @@
-import countDuplicates from "./countDuplicates";
+import countDuplicates from './countDuplicates';
 
 describe('countDuplicates:', () => {
 

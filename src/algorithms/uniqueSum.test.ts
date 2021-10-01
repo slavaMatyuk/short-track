@@ -1,4 +1,4 @@
-import uniqueSum from "./uniqueSum";
+import uniqueSum from './uniqueSum';
 
 describe('uniqueSum:', () => {
 

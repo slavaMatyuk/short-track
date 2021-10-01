@@ -1,4 +1,4 @@
-import toMachineName from "./toMachineName";
+import toMachineName from './toMachineName';
 
 describe('toMachineName:', () => {
 

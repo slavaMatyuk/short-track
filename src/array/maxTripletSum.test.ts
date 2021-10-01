@@ -1,4 +1,4 @@
-import maxTripletSum from "./maxTripletSum";
+import maxTripletSum from './maxTripletSum';
 
 describe('maxTripletSum:', () => {
 
