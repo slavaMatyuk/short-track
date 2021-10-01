@@ -1,5 +1,5 @@
 const sumAverage = (arr: Array<number[]>): number => {
-  return Math.floor(arr.map(elem => elem.reduce((a, b) => (a + b)) / elem.length).reduce((a, b) => (a + b)));
+  return Math.floor(arr.reduce((acc, cur) => acc + (cur.reduce((a, b) => (a + b)) / cur.length), 0));
 };
 
 export default sumAverage;

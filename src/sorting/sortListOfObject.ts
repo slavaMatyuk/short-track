@@ -1,8 +1,6 @@
 const sortListOfObject = (list: Array<{ [key: string]: number }>, sortBy: string): Array<{ [key: string]: number }> => {
-  if (!sortBy) {
-    return list;
-  }
-  return list.sort((a, b) => b[sortBy] - a[sortBy]);
+  
+  return list.every(obj => obj.hasOwnProperty(sortBy)) ? list.sort((a, b) => b[sortBy] - a[sortBy]) : list;
 };
 
 export default sortListOfObject;
